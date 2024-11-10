@@ -91,17 +91,24 @@
                 // Check if the name contains any uppercase letters
                 errorMessage.textContent = 'Please use lowercase letters only.';
             } else {
-            // Redirect based on name
-            if (name === 'meisha') {
-            window.location.href = 'Special.html'; 
-            } else {
-            window.location.href = 'General.html'; 
-        }
-
+                // Redirect based on name
+                if (name === 'meisha') {
+                    window.location.href = 'Special.html'; 
+                } 
+                else if (name === 'riden') {
+                    window.location.href = 'riden.html'; 
+                }
+                else if (name === 'angelica') {
+                    window.location.href = 'angelica.html'; 
+                }
+                else if (name === 'joaquin') {
+                    window.location.href = 'joaquin.html'; 
+                }
+                else {
+                    window.location.href = 'General.html'; 
+                }
             }
         }
     </script>
-
-
 </body>
 </html>
