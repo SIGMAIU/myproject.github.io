@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confession Card with Watermark</title>
+    <title>Confession Card with Music</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #121212; /* Dark background */
-            color: white; /* Light text color */
+            background-color: #121212;
+            color: white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,7 +23,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 5rem;
-            color: rgba(0, 0, 0, 0.1); /* Semi-transparent */
+            color: rgba(0, 0, 0, 0.1);
             font-weight: bold;
             z-index: -1;
             pointer-events: none;
@@ -31,7 +31,7 @@
         }
 
         .card {
-            background-color: #2c2c2c; /* Slightly lighter dark color for card */
+            background-color: #2c2c2c;
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -64,18 +64,17 @@
         .profile .name {
             font-size: 18px;
             font-weight: bold;
-            color: #fff; /* Light color for name */
+            color: #fff;
         }
 
         .confession-message {
             font-size: 18px;
-            color: #ddd; /* Lighter gray for the confession text */
+            color: #ddd;
             margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- Profile Card -->
     <div class="card">
         <div class="author">Author: Chris_Jezreel D</div>
         <div class="profile">
@@ -85,8 +84,8 @@
         <div class="confession-message" id="confessionMessage"></div>
     </div>
 
-    <audio id="backgroundMusic" autoplay loop>
-        <source id="./audioSource" type="audio/mp3">
+    <audio id="backgroundMusic" autoplay>
+        <source id="audioSource" type="audio/mp3">
         Your browser does not support the audio element.
     </audio>
 
@@ -113,9 +112,9 @@
         const audioFiles = [
             './audio/Blue_-_Yung_Kai__lyrics_(128k).m4a',
             './audio/Bôa_-_Duvet__Lyrics_(128k).m4a',
-            './audio/audio/Scott_Street__Slowed_(128k).m4a'
-            './audio/Mitski_-_My_Love_Mine_All_Mine__Lyrics_(128k).m4a'
-            './audio/@BillieEilish_-_BIRDS_OF_A_FEATHER__Lyrics_(128k).m4a'
+            './audio/Scott_Street__Slowed_(128k).m4a',
+            './audio/Mitski_-_My_Love_Mine_All_Mine__Lyrics_(128k).m4a',
+            './audio/BillieEilish_-_BIRDS_OF_A_FEATHER__Lyrics_(128k).m4a'
         ];
 
         // Randomly select an audio file
