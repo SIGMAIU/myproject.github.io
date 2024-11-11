@@ -62,7 +62,7 @@
 <body>
     <div class="container">
         <h2>Enter Your Name</h2>
-        <input type="text" id="userName" placeholder="Your Name" required oninput="clearMessages()">
+        <input type="text" id="userName" placeholder="Your Name" required oninput="clearMessages()" onkeydown="handleEnterKey(event)">
         <button onclick="submitName()">Submit</button>
         <div class="message" id="message"></div>
         <div class="error" id="errorMessage"></div>
@@ -70,9 +70,14 @@
 
     <script>
         function clearMessages() {
-            // Clear message and error on user input
             document.getElementById('message').textContent = '';
             document.getElementById('errorMessage').textContent = '';
+        }
+
+        function handleEnterKey(event) {
+            if (event.key === "Enter") {
+                submitName();
+            }
         }
 
         function submitName() {
@@ -80,18 +85,14 @@
             const errorMessage = document.getElementById('errorMessage');
             const message = document.getElementById('message');
 
-            // Clear previous error message
             errorMessage.textContent = '';
             message.textContent = '';
 
-            // Check if the name is entered in lowercase only
             if (name === '') {
                 message.textContent = 'Please enter your name.';
             } else if (/[A-Z]/.test(name)) {
-                // Check if the name contains any uppercase letters
                 errorMessage.textContent = 'Please use lowercase letters only.';
             } else {
-                // Redirect based on name
                 if (name === 'meisha') {
                     window.location.href = 'Special.html'; 
                 } 
