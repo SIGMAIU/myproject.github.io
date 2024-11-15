@@ -80,6 +80,7 @@
             height: 20px;
             background-color: red;
             clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
             animation: fall linear infinite;
             opacity: 0.8;
         }
@@ -104,10 +105,10 @@
             <div class="name">Chris</div>
         </div>
         <div class="confession-message" id="confessionMessage">
-        "Every time I see you, my heart races, and I can't help but smile. I’m not always the best with words, but I want you to know that you're constantly on my mind. Just seeing you brightens my day, and I wish I could tell you how much you mean to me. Maybe one day I'll find the courage to say this in person, but for now, I hope you feel how special you truly are.🌹.❤️🌹"
+            "Every time I see you, my heart races, and I can't help but smile. I’m not always the best with words, but I want you to know that you're constantly on my mind. Just seeing you brightens my day, and I wish I could tell you how much you mean to me. Maybe one day I'll find the courage to say this in person, but for now, I hope you feel how special you truly are.🌹.❤️🌹"
         </div>
-        <audio autoplay loop>
-            <source src="./audio/Untitled video - Made with Clipchamp.mp4" type="audio/mp3">
+        <audio autoplay loop preload="auto">
+            <source src="./audio/Untitled_audio_clip.mp4" type="audio/mp4">
         </audio>
     </div>
 
@@ -116,7 +117,8 @@
             const heart = document.createElement('div');
             heart.classList.add('heart');
             heart.style.left = Math.random() * 100 + 'vw';
-            heart.style.animationDuration = Math.random() * 3 + 2 + 's'; // Between 2 and 5 seconds
+            heart.style.animationDuration = (Math.random() * 3 + 2) + 's'; // Between 2 and 5 seconds
+            heart.style.opacity = Math.random() * 0.5 + 0.5; // Random opacity between 0.5 and 1
             document.body.appendChild(heart);
 
             setTimeout(() => {
