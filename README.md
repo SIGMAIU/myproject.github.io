@@ -1,6 +1,6 @@
 # 💌 Confession Hub
 
-![Confession Banner](MTMwNjgzMDA0ODAxMTA5MjA2OQ.GPwCPv.qTUSZxQ4416fB3wIA8Yx_OQTxj3L9ph2Bz4SLw)
+![Confession Banner]()
 
 A unique platform where heartfelt words and secret admirations come to life! 🌟 Whether you're sharing a note of appreciation, love, or a hidden sentiment, **Confession Hub** is the perfect place to let your words speak for you.
 
