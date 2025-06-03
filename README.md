@@ -1,7 +1,5 @@
 # 💌 MESSAGE
 
-![MESSAGE CARD]()
-
 A unique platform where heartfelt words and secret admirations come to life! 🌟 Whether you're sharing a note of appreciation, love, or a hidden sentiment, **Confession Hub** is the perfect place to let your words speak for you.
 
 ## 🌟 Features
@@ -14,7 +12,7 @@ A unique platform where heartfelt words and secret admirations come to life! �
 
 | Home Page  | Submit Confession Page |
 |------------|-------------------------|
-| ![Home](https://via.placeholder.com/400x250.png?text=Home+Page) |
+| ![Home](.Pic/Screenshot 2025-06-03 140044.png) |
 
 
 ## 💻 Technologies Used
