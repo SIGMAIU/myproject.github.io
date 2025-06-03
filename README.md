@@ -12,7 +12,7 @@ A unique platform where heartfelt words and secret admirations come to life! ðŸŒ
 
 | Home Page  | Submit Confession Page |
 |------------|-------------------------|
-| ![Home]([Screenshot 2025-06-03 140044.png](https://granny.freefilehosting.online/uploads/069aa0afc33ece3e/Screenshot%202025-06-03%20140044.png)) |
+| ![Home](https://granny.freefilehosting.online/uploads/069aa0afc33ece3e/Screenshot%202025-06-03%20140044.png)|
 
 
 ## ðŸ’» Technologies Used
