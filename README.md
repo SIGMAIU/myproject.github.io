@@ -10,8 +10,8 @@ A unique platform where heartfelt words and secret admirations come to life! ðŸŒ
 
 ## ðŸ“¸ Screenshots
 
-| Home Page  | Submit Confession Page |
-|------------|-------------------------|
+| Home Page  | 
+|------------|
 | ![Home](https://granny.freefilehosting.online/uploads/069aa0afc33ece3e/Screenshot%202025-06-03%20140044.png)|
 
 
