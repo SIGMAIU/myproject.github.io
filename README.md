@@ -1,6 +1,6 @@
 # 💌 MESSAGE
 
-A unique platform where heartfelt words and secret admirations come to life! 🌟 Whether you're sharing a note of appreciation, love, or a hidden sentiment, **Confession Hub** is the perfect place to let your words speak for you.
+A unique platform where heartfelt words and secret admirations come to life! 🌟 Whether you're sharing a note of appreciation, love, or a hidden sentiment, **Message Site** is the perfect place to let your words speak for you. 
 
 ## 🌟 Features
 
