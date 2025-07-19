@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Of Sigma</title>
+    <title>Special-Message</title>
     <style id="INLINE_PEN_STYLESHEET_ID">
         body {
             font-family: Arial, sans-serif;
@@ -30,8 +30,15 @@
             white-space: nowrap;
         }
 
+       
+
+
+        
+
          .card {
-  background-color: #2c2c2c;
+  background-color: #011522;
+  position: relative; /* Needed for .tools absolute positioning to work */
+  padding-top: 40px;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -49,11 +56,13 @@
 }
 
 .thumbnail img {
-  width: 67px;
-  height: 67px;
+  width: 70px;
+  height: 70px;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  position: relative;
 }
 
 .profile {
@@ -63,11 +72,21 @@
 }
 
 .profile img {
+  animation: pulse 2s infinite ease-in-out;
   width: 64px;
   height: 64px;
   border-radius: 50%;
   margin-right: 15px;
 }
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0px #fff;
+  }
+  50% {
+    box-shadow: 0 0 12px #ff69b4;
+  }
+}
+
 
 .profile .name {
   font-size: 20px;
@@ -115,6 +134,41 @@
             color: #ddd;
             margin-bottom: 20px;
         }
+
+        .tools {
+ position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 6px;
+  z-index: 100;
+}
+
+.circle {
+ padding: 0 4px;
+}
+
+.box {
+ display: inline-block;
+ align-items: center;
+ width: 10px;
+ height: 10px;
+ padding: 1px;
+ border-radius: 50%;
+}
+
+.red {
+ background-color: #ff605c;
+}
+
+.yellow {
+ background-color: #ffbd44;
+}
+
+.green {
+ background-color: #00ca4e;
+}
+
 
 
         @keyframes fall {
@@ -719,28 +773,54 @@ filter: blur(1px);
 <div class="snowflake"></div>
 <div class="snowflake"></div>
 
+
+
     <div class="card">
-        <div class="author">Author: Chris_Jezreel D</div>
-        <div class="thumbnail">
+  <div class="tools">
+    <div class="circle"><span class="red box"></span></div>
+    <div class="circle"><span class="yellow box"></span></div>
+    <div class="circle"><span class="green box"></span></div>
+  </div>
+  <div class="thumbnail">
     <img src="./Pic/Screenshot 2025-06-03 132035.png" alt="Thumbnail">
   </div>
-        <div class="profile">
+
+  <div class="author">Author: Chris_Jezreel D</div>
+  <div class="profile">
             <img src="./Pic/8930-walter-edit-pfpsgg.gif" alt="Your Profile">
             <div class="name">Jezreel</div>
         </div>
-        <div class="confession-message" id="confessionMessage">
-          "bro Meisha Nicole Rebano, how are you na? You good?
-January 1, 2026 — ikaw pa rin hehe.
-Di ko alam why, but I saw things in you that I can't find in others.
-I hope you still remember me...
-I'm still here, silently admiring from afar.
 
-— Jezfit 🌹"
-        </div>
+        <div class="confession-message" id="confessionMessage"></div>
+ </div>
          <audio autoplay loop>
             <source src="./audio/Cup_of_Joe_-_Multo_@BaseNaija.mp3" type="audio/mp3">
         </audio>
-    </div>
+         
+  </div>
+</div>
+        <script>
+  const message = `Bro Meisha Nicole Rebano, how are you na? You good?
+January 1, 2026 — ikaw pa rin , hehe.
+Di ko alam exactly why I keep thinking about you, pero I saw something in you that no one else had.
+I hope you still remember me...
+I'm still here, silently admiring from afar.
+
+— Jezfit 🌹`;
+
+  const confessionElement = document.getElementById('confessionMessage');
+  let index = 0;
+
+  function typeChar() {
+    if (index < message.length) {
+      confessionElement.innerHTML += message.charAt(index) === '\n' ? '<br>' : message.charAt(index);
+      index++;
+      setTimeout(typeChar, 50); // typing speed (ms)
+    }
+  }
+
+  window.onload = typeChar;
+</script>
 
 </body>
 </html>
